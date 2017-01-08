@@ -161,11 +161,6 @@ $button-transition: background-color 0.25s ease-out, color 0.25s ease-out !defau
 @mixin button-disabled($color: $primary-color) {
   opacity: $button-opacity-disabled;
   cursor: not-allowed;
-
-  &:hover, &:focus {
-    background-color: $color;
-    color: $button-color;
-  }
 }
 
 /// Adds a dropdown arrow to a button.
