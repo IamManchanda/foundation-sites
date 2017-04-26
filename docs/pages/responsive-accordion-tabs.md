@@ -30,6 +30,34 @@ Accordion content should also have an ID, or the # of the href should be specifi
 ```
 
 <div class="secondary callout">
+  <p>Once you put it all together, here's what you get!<br>Scale your browser down to see the toggle happen.<br>I am an `Accordion on small and large` but I am `Tabs on medium`</p>
+</div>
+
+<ul class="accordion" data-responsive-accordion-tabs="accordion medium-tabs large-accordion">
+  <li class="accordion-item is-active" data-accordion-item>
+    <a href="#" class="accordion-title">Accordion 1</a>
+    <div class="accordion-content" data-tab-content >
+      <p>Panel 1. Lorem ipsum dolor</p>
+      <a href="#">Nowhere to Go</a>
+    </div>
+  </li>
+  <li class="accordion-item" data-accordion-item>
+    <a href="#" class="accordion-title">Accordion 2</a>
+    <div class="accordion-content" data-tab-content>
+      <textarea></textarea>
+      <button class="button">I do nothing!</button>
+    </div>
+  </li>
+  <li class="accordion-item" data-accordion-item>
+    <a href="#" class="accordion-title">Accordion 3</a>
+    <div class="accordion-content" data-tab-content>
+      Pick a date!
+      <input type="date"></input>
+    </div>
+  </li>
+</ul>
+
+<div class="secondary callout">
   <p>The accordion/tabs values can be in any order.</p>
 </div>
 
@@ -46,10 +74,10 @@ Accordion content should also have an ID, or the # of the href should be specifi
 ```
 
 <div class="secondary callout">
-  <p>Once you put it all together, here's what you get!<br>Scale your browser down to see the toggle happen.<br>I am an `Accordion on small and large` but I am `Tabs on medium`</p>
+  <p>Once you put it all together, here's what you get!<br>Scale your browser down to see the toggle happen.<br>I am an `Tabs on small and large` but I am `Accordion on medium`</p>
 </div>
 
-<ul class="accordion" data-responsive-accordion-tabs="accordion medium-tabs large-accordion">
+<ul class="accordion" data-responsive-accordion-tabs="tabs medium-accordion large-tabs">
   <li class="accordion-item is-active" data-accordion-item>
     <a href="#" class="accordion-title">Accordion 1</a>
     <div class="accordion-content" data-tab-content >
