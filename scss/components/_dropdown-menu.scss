@@ -145,6 +145,9 @@ $dropdownmenu-border-width: nth($dropdownmenu-border, 1);
 
     &.vertical {
       @include dropdown-menu-direction(vertical);
+      &.align-right > li > a::after {
+        #{$global-left}: 14px;
+      }
     }
 
     @each $size in $breakpoint-classes {
