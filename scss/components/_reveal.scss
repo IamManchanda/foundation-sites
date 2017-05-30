@@ -90,7 +90,6 @@ $reveal-overlay-background: rgba($black, 0.45) !default;
   $max-width: $reveal-max-width
 ) {
   @include breakpoint(medium) {
-    @extend %reveal-centered;
     width: $width;
     max-width: $max-width;
   }
@@ -136,6 +135,7 @@ $reveal-overlay-background: rgba($black, 0.45) !default;
   .reveal {
     @include reveal-modal-base;
     @include reveal-modal-width($reveal-width);
+    @extend %reveal-centered;
     position: relative;
     top: 100px;
     margin-right: auto;
@@ -158,9 +158,15 @@ $reveal-overlay-background: rgba($black, 0.45) !default;
     }
 
     // Sizing classes
-    &.tiny  { @include reveal-modal-width(30%); }
-    &.small { @include reveal-modal-width(50%); }
-    &.large { @include reveal-modal-width(90%); }
+    &.tiny  { 
+      @include reveal-modal-width(30%); 
+    }
+    &.small { 
+      @include reveal-modal-width(50%); 
+    }
+    &.large { 
+      @include reveal-modal-width(90%); 
+    }
 
     // Full-screen mode
     &.full {
